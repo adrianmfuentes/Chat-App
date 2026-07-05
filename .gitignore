@@ -1,18 +1,8 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# Root-level ignores. frontend/ and server/ each have their own .gitignore
+# for files specific to their own toolchain.
 
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
-
-# testing
-/coverage
-
-# production
-/build
-
-# misc
 .DS_Store
+.env
 .env.local
 .env.development.local
 .env.test.local
