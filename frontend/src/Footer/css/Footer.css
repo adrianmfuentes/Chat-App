@@ -1,6 +1,6 @@
 /* Estilo personalizado para el footer */
 .custom-footer {
-    background-color: #001529; /* Fondo oscuro */
+    background-color: #1E1B4B; /* Fondo oscuro, igual al header */
     color: #ffffff; /* Texto blanco */
     padding: 20px; /* Espaciado interno */
     text-align: center; /* Centrar texto */
@@ -35,7 +35,7 @@
 
 /* Efecto hover para los enlaces */
 .footer-link:hover {
-    color: #3500f7; /* Cambiar el color al pasar el ratón */
+    color: #A5B4FC; /* Acento índigo claro al pasar el ratón */
 }
 
 /* Media query para pantallas pequeñas */

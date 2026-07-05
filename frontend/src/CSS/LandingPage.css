@@ -3,31 +3,31 @@
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-size: cover;
-  background-position: center;
-  background-color: #FAF3E0;
+  background: linear-gradient(135deg, #EEF2FF 0%, #F8FAFC 60%);
   padding: 20px; /* Espaciado para evitar que el contenido se pegue a los bordes */
 }
 
 .landing-page-content {
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco con opacidad */
-  padding: 50px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 1px solid #E2E8F0;
+  padding: 56px;
+  border-radius: 16px;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.06), 0 12px 32px rgba(15, 23, 42, 0.08);
   max-width: 800px; /* Limita el ancho en pantallas grandes */
   width: 100%; /* Se asegura de que tome todo el ancho disponible */
 }
 
 .landing-title {
   font-size: 3rem;
-  color: #1890ff; /* Color primario de Ant Design */
+  font-weight: 700;
+  color: #1E1B4B;
   margin-bottom: 20px;
 }
 
 .landing-text {
-  font-size: 1.5rem;
-  color: #333;
+  font-size: 1.25rem;
+  color: #475569;
   margin-bottom: 40px;
 }
 

@@ -32,7 +32,7 @@ const RoomListComp = ({ createNotification }) => {
   }, [token, createNotification, t]);
 
   return (
-    <div>
+    <div className="page-container">
       <h2>{t('Chat Rooms')}</h2>
       <Link to="/createChatRoom">
         <Button type="primary" style={{ marginBottom: 16 }}>

@@ -1,7 +1,7 @@
 import 'antd/dist/reset.css';
 import React, { useEffect } from 'react';
 import { Link, Route, Routes, useNavigate } from 'react-router-dom';
-import { Layout, Menu, notification, Dropdown, Button } from 'antd';
+import { ConfigProvider, Layout, Menu, notification, Dropdown, Button } from 'antd';
 import { Content, Header } from 'antd/es/layout/layout';
 import { MenuOutlined } from '@ant-design/icons';
 
@@ -133,9 +133,21 @@ function AppShell() {
 
 function App() {
   return (
-    <AuthProvider>
-      <AppShell />
-    </AuthProvider>
+    <ConfigProvider
+      theme={{
+        token: {
+          colorPrimary: '#4338CA',
+          colorLink: '#4338CA',
+          borderRadius: 8,
+          fontFamily:
+            "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif",
+        },
+      }}
+    >
+      <AuthProvider>
+        <AppShell />
+      </AuthProvider>
+    </ConfigProvider>
   );
 }
 

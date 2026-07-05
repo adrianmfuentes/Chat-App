@@ -67,7 +67,7 @@ const ChatRoomComp = ({ createNotification }) => {
   };
 
   return (
-    <div>
+    <div className="page-container">
       <List
         bordered
         dataSource={messages}

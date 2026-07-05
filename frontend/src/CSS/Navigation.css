@@ -1,10 +1,11 @@
 /* Estilo para la barra de navegación */
 .navigation-header {
-    background-color: #001529; /* Color de fondo de la barra */
+    background-color: #1E1B4B; /* Color de fondo de la barra */
     padding: 0 20px; /* Espaciado horizontal */
     display: flex;
     justify-content: space-between; /* Espaciar elementos de la barra */
     align-items: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
 /* Estilo para el contenedor del menú */
@@ -19,6 +20,12 @@
     margin: 0 10px; /* Espaciado uniforme entre elementos del menú */
 }
 
+/* El Menu antd "dark" trae su propio fondo (#001529); lo hacemos
+   transparente para que se funda con el header morado/índigo. */
+.navigation-menu .ant-menu-dark {
+    background: transparent;
+}
+
 /* Estilo para el menú desplegable */
 .ant-dropdown-menu {
     padding: 10px; /* Espaciado interno del menú desplegable */
@@ -29,16 +36,17 @@
     margin: 5px 0; /* Espaciado entre el submenú y otros elementos */
 }
 
-/* Estilo para el botón del menú */
-.ant-btn {
-    background-color: #1890ff; /* Color de fondo del botón */
-    border: none; /* Sin borde */
-    color: white; /* Color del texto del botón */
+/* Estilo para el botón del menú de idioma/hamburguesa en el header */
+.navigation-menu .ant-btn {
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
 }
 
-/* Hover effect para el botón */
-.ant-btn:hover {
-    background-color: #40a9ff; /* Color de fondo al pasar el cursor */
+.navigation-menu .ant-btn:hover {
+    background-color: rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.5);
+    color: white;
 }
 
 /* Media Queries para pantallas medianas y pequeñas */

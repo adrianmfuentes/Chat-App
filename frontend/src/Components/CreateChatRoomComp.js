@@ -31,7 +31,7 @@ const CreateChatRoomComp = ({ createNotification }) => {
   };
 
   return (
-    <div>
+    <div className="page-container">
       <Input
         placeholder={t('Enter room name')}
         value={roomName}
